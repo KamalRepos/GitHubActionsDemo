@@ -1,0 +1,12 @@
+name: First workflow
+
+on: push
+
+jobs:
+    build: 
+        runs-on: ubuntu-latest     #ubuntu mahcine will be spun up instantly by github
+
+        steps:
+            - uses: actions/checkout@v3
+            - name: "Build command"
+              run: echo "This workflow run successfully for this partiular action"
